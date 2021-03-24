@@ -121,14 +121,14 @@ void compile_shaders(const map<string, vector<pair<SHADER_TYPE, string>>> &shade
 void precompile_shaders()
 {
   shaderMap.clear();
-  read_directories(Application::instance().commonShaderPath);
+  //read_directories(Application::instance().commonShaderPath);
   read_directories(Application::instance().projectShaderPath);
   compile_shaders(shaderMap, false);
 }
 void compile_shaders()
 {
   shaderMap.clear();
-  read_directories(Application::instance().commonShaderPath);
+  //read_directories(Application::instance().commonShaderPath);
   read_directories(Application::instance().projectShaderPath);
   compile_shaders(shaderMap, true);
 }

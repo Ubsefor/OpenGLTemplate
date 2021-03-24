@@ -37,4 +37,4 @@ Builds/*/rel
 # Resources
 *.fbx
 *.jpg
-*.png
+#*.png

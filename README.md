@@ -1,8 +1,13 @@
-May be You need to install some libs like SDL2, glm, etc
-Try to google "ubuntu install 'library name'" 
+Install packages:
+sudo apt-get install cmake
+sudo apt-get install libglm-dev
+sudo apt-get install libsdl2-dev
 
 
-Run and build release 
+Run and build release:
 ./build_script.sh RayTracing rel && ./run_build.sh RayTracing rel
-Run and build bedug
+or
+./build_script.sh && ./run_build.sh
+
+Run and build bedug:
 ./build_script.sh RayTracing dev && ./run_build.sh RayTracing dev
