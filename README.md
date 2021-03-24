@@ -10,7 +10,9 @@ Imgui, unfortunately, has been butchered, long live Imgui...
 ### Install necessary libraries:
 
 You require the OpenGL framework (I suggest compiling it from sources, as the shaders use version 4.1: [instructions](https://riptutorial.com/opengl/example/21105/setup-modern-opengl-4-1-on-macos--xcode--glfw-and-glew-) and `brew install glfw`
+
 You also require the SDL2 library: `brew install sdl2`
+
 And, lastly, GLEW: `brew install glew`
 
 Additionally, you may need llvm, but I do believe it compiles just fine with Apple Clang...
