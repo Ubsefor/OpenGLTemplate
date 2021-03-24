@@ -16,7 +16,9 @@ Additionally, you may need llvm, but I do believe it compiles just fine with App
 
 ### Building & Running:
 
-First of all, you should set up your Xcode as in the pictures: [1](Info/1.png) and [2](Info/2.png)
+First of all, you should set up your Xcode as in the pictures: ![1](Info/1.png) 
+and 
+![2](Info/2.png)
 
 If you don't want to do that – you need to reconfigure paths to Shaders and source code of the project in [Application/config.cpp](OpenGLTemplate/Application/config.cpp)
 Build the project by opening project file or via terminal, using command `xcodebuild -target OpenGLTemplate -scheme Release`, or any other configuration you may find yourself in need of.
