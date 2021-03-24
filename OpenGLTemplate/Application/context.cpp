@@ -6,7 +6,7 @@ Context::Context(string window_name, int width, int height, bool full_screen):
   width(width), height(height)
 {
   SDL_Init(SDL_INIT_EVERYTHING);
-  const char* glsl_version = "#version 410";
+  //const char* glsl_version = "#version 410";
   SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, 0);
   SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
   SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
@@ -24,7 +24,8 @@ Context::Context(string window_name, int width, int height, bool full_screen):
     {
       throw std::runtime_error {"Error getting desktop display mode\n"};
     }
-    width = dm.w, height = dm.h;
+    width = dm.w;
+    height = dm.h;
   } 
   SDL_WindowFlags window_flags = (SDL_WindowFlags)(SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
   window = SDL_CreateWindow(window_name.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, window_flags);
