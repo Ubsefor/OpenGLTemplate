@@ -26,7 +26,6 @@
 		470DF8F5260B5B7500AA971C /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 470DF8D4260B5B7500AA971C /* application.cpp */; };
 		470DF8F6260B5B7500AA971C /* stb_implementation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 470DF8D6260B5B7500AA971C /* stb_implementation.cpp */; };
 		470DF8F7260B5B7500AA971C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 470DF8DB260B5B7500AA971C /* glad.c */; };
-		470DF8FC260B5CC900AA971C /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 470DF8FB260B5CC900AA971C /* libGLEW.2.1.0.dylib */; };
 		470DF8FE260B5CD200AA971C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470DF8FD260B5CD200AA971C /* OpenGL.framework */; };
 		470DF900260B5DA300AA971C /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 470DF8FF260B5DA300AA971C /* libSDL2-2.0.0.dylib */; };
 		470DF908260B5F3B00AA971C /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 470DF907260B5F3B00AA971C /* libglfw.3.3.dylib */; };
@@ -34,6 +33,7 @@
 		47C36A72260B7B2400ACBA31 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47C36A70260B7B2400ACBA31 /* main.cpp */; };
 		47C36A73260B803900ACBA31 /* ray_tracing_scene.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47C36A6B260B7B2400ACBA31 /* ray_tracing_scene.frag */; };
 		47C36A74260B803900ACBA31 /* ray_tracing_scene.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47C36A6C260B7B2400ACBA31 /* ray_tracing_scene.vert */; };
+		47EC6182260E083B00D9EC46 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EC6181260E083B00D9EC46 /* libGLEW.2.2.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,7 +115,6 @@
 		470DF8DD260B5B7500AA971C /* time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
 		470DF8DE260B5B7500AA971C /* time_scope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_scope.h; sourceTree = "<group>"; };
 		470DF8F9260B5BAC00AA971C /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
-		470DF8FB260B5CC900AA971C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../usr/local/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		470DF8FD260B5CD200AA971C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		470DF8FF260B5DA300AA971C /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		470DF907260B5F3B00AA971C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -124,6 +123,7 @@
 		47C36A6E260B7B2400ACBA31 /* ray_tracing_scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ray_tracing_scene.cpp; path = OpenGLTemplate/RayTracing/Sources/ray_tracing_scene.cpp; sourceTree = SOURCE_ROOT; };
 		47C36A6F260B7B2400ACBA31 /* ray_tracing_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ray_tracing_scene.h; path = OpenGLTemplate/RayTracing/Sources/ray_tracing_scene.h; sourceTree = SOURCE_ROOT; };
 		47C36A70260B7B2400ACBA31 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = OpenGLTemplate/RayTracing/Sources/main.cpp; sourceTree = SOURCE_ROOT; };
+		47EC6181260E083B00D9EC46 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				470DF908260B5F3B00AA971C /* libglfw.3.3.dylib in Frameworks */,
+				47EC6182260E083B00D9EC46 /* libGLEW.2.2.0.dylib in Frameworks */,
 				470DF900260B5DA300AA971C /* libSDL2-2.0.0.dylib in Frameworks */,
 				470DF8FE260B5CD200AA971C /* OpenGL.framework in Frameworks */,
-				470DF8FC260B5CC900AA971C /* libGLEW.2.1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,10 +360,10 @@
 		470DF8FA260B5CC800AA971C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47EC6181260E083B00D9EC46 /* libGLEW.2.2.0.dylib */,
 				470DF907260B5F3B00AA971C /* libglfw.3.3.dylib */,
 				470DF8FF260B5DA300AA971C /* libSDL2-2.0.0.dylib */,
 				470DF8FD260B5CD200AA971C /* OpenGL.framework */,
-				470DF8FB260B5CC900AA971C /* libGLEW.2.1.0.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -594,7 +594,6 @@
 		470DF890260B5A5100AA971C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
@@ -606,6 +605,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
+					/usr/local/Cellar/glew/2.2.0_1/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,7 +615,6 @@
 		470DF891260B5A5100AA971C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
@@ -627,6 +626,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
+					/usr/local/Cellar/glew/2.2.0_1/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
